@@ -4,6 +4,7 @@
 	--color-black: #000000;
 	--color-white: #fff;
 	--color-med-gray: 	#7a7a7a;
+	--color-page-background: #fafafa;
 }
 
 *, 
@@ -20,4 +21,5 @@ html {
 
 body {
 	box-sizing: border-box;
+	background-color: var(--color-page-background);
 }

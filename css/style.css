@@ -3,7 +3,8 @@
   --color-primary-dark: #147b74;
   --color-black: #000000;
   --color-white: #fff;
-  --color-med-gray: 	#7a7a7a; }
+  --color-med-gray: 	#7a7a7a;
+  --color-page-background: #fafafa; }
 
 *,
 *::after,
@@ -16,13 +17,71 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: var(--color-page-background); }
 
 body {
   font-family: 'Commissioner', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-med-gray); }
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--color-black); }
+
+p {
+  font-size: 1.6rem;
+  font-weight: normal; }
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 4.8rem;
+  position: relative; }
+  .card:not(:last-child) {
+    margin-bottom: 2.4rem; }
+  .card--intro {
+    text-align: center; }
+  .card__bottom-row {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.mastercraft-logo {
+  position: absolute;
+  left: 50%;
+  top: -3rem;
+  transform: translateX(-50%); }
+
+.bookmark {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 17.4rem;
+  background-color: #f4f4f4;
+  border-radius: 100px;
+  cursor: pointer; }
+  .bookmark p {
+    position: absolute;
+    left: calc(calc(100% - 56px) - 50%);
+    transform: translateX(50%);
+    font-weight: 700; }
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--color-primary-light);
+  padding: 2rem 4rem;
+  color: var(--color-white);
+  font-weight: 500;
+  cursor: pointer; }
+  .btn--main {
+    font-size: 1.6rem; }
 
 .container {
   max-width: 80%;
@@ -56,3 +115,9 @@ body {
     .navigation__link:hover {
       cursor: pointer;
       text-decoration: underline; }
+
+.feed {
+  max-width: 73rem;
+  margin: -9rem auto 0;
+  width: 73rem;
+  height: 30rem; }

@@ -1,0 +1,30 @@
+.card {
+	background-color: var(--color-white);
+	border-radius: 1rem;
+	border: 1px solid rgba(0,0,0,.05);
+	padding: 4.8rem;
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: 2.4rem;
+	}
+
+	&--intro {
+		text-align: center;
+	}
+
+	&__bottom-row {
+		// todo this may need to change base on the card
+		margin-top: 4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.mastercraft-logo {
+	position: absolute;
+	left: 50%;
+	top: -3rem;
+	transform: translateX(-50%);
+}
