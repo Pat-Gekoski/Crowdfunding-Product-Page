@@ -1,0 +1,40 @@
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 5rem 0 5rem 0;
+
+	&__nav {
+
+	}
+
+	&__logo {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+
+		&:not(:first-child) {
+			padding-left: 3.5rem;
+		}
+	}
+
+	&__link {
+		color: var(--color-white);
+		text-decoration: none;
+		font-size: 1.3rem;
+
+		&:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+}

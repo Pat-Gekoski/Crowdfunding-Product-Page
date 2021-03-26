@@ -1,0 +1,58 @@
+:root {
+  --color-primary-light: #3cb4ac;
+  --color-primary-dark: #147b74;
+  --color-black: #000000;
+  --color-white: #fff;
+  --color-med-gray: 	#7a7a7a; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-med-gray); }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto; }
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/image-hero-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5rem 0 5rem 0; }
+  .navigation__logo:hover {
+    cursor: pointer; }
+  .navigation__list {
+    list-style: none; }
+  .navigation__item {
+    display: inline-block; }
+    .navigation__item:not(:first-child) {
+      padding-left: 3.5rem; }
+  .navigation__link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.3rem; }
+    .navigation__link:hover {
+      cursor: pointer;
+      text-decoration: underline; }
